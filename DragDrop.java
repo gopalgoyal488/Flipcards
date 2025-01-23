@@ -30,6 +30,7 @@ public class DragDrop {
 		
 		wait= new WebDriverWait(driver,Duration.ofSeconds(15));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//a[text()='Miscellaneous']"))).click();
+		wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//qatest")));
 		
 		
 		//driver.findElement(By.xpath("//a[text()='Miscellaneous']")).click();
